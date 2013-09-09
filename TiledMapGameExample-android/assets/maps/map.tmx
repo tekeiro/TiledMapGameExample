@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="64" height="64" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="tileset.png" trans="ff00ff" width="188" height="188"/>
+  <terraintypes>
+   <terrain name="Arena" tile="27"/>
+   <terrain name="Cesped Verde" tile="12"/>
+   <terrain name="Cesped Amarillo" tile="45"/>
+   <terrain name="Agua" tile="106"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,1"/>
+  <tile id="1" terrain="0,0,1,1"/>
+  <tile id="2" terrain="0,0,1,0"/>
+  <tile id="3" terrain="1,1,1,0"/>
+  <tile id="4" terrain="1,1,0,1"/>
+  <tile id="11" terrain="0,1,0,1"/>
+  <tile id="12" terrain="1,1,1,1"/>
+  <tile id="13" terrain="1,0,1,0"/>
+  <tile id="14" terrain="1,0,1,1"/>
+  <tile id="15" terrain="0,1,1,1"/>
+  <tile id="22" terrain="0,1,0,0"/>
+  <tile id="23" terrain="1,1,0,0"/>
+  <tile id="24" terrain="1,0,0,0"/>
+  <tile id="25" terrain="2,2,2,1"/>
+  <tile id="26" terrain="2,2,1,2"/>
+  <tile id="27" terrain="0,0,0,0"/>
+  <tile id="33" terrain="1,1,1,2"/>
+  <tile id="34" terrain="1,1,2,2"/>
+  <tile id="35" terrain="1,1,2,1"/>
+  <tile id="36" terrain="2,1,2,2"/>
+  <tile id="37" terrain="1,2,2,2"/>
+  <tile id="44" terrain="1,2,1,2"/>
+  <tile id="45" terrain="2,2,2,2"/>
+  <tile id="46" terrain="2,1,2,1"/>
+  <tile id="55" terrain="1,2,1,1"/>
+  <tile id="56" terrain="2,2,1,1"/>
+  <tile id="57" terrain="2,1,1,1"/>
+  <tile id="66" terrain=",,,1"/>
+  <tile id="67" terrain=",,1,1"/>
+  <tile id="68" terrain=",,1,"/>
+  <tile id="77" terrain=",1,,1"/>
+  <tile id="79" terrain="1,,1,"/>
+  <tile id="86" terrain="3,3,3,1"/>
+  <tile id="87" terrain="3,3,1,3"/>
+  <tile id="88" terrain=",1,,"/>
+  <tile id="89" terrain="1,1,,"/>
+  <tile id="90" terrain="1,,,"/>
+  <tile id="94" terrain="1,1,1,3"/>
+  <tile id="95" terrain="1,1,3,3"/>
+  <tile id="96" terrain="1,1,3,1"/>
+  <tile id="97" terrain="3,1,3,3"/>
+  <tile id="98" terrain="1,3,3,3"/>
+  <tile id="105" terrain="1,3,1,3"/>
+  <tile id="106" terrain="3,3,3,3"/>
+  <tile id="107" terrain="3,1,3,1"/>
+  <tile id="116" terrain="1,3,1,1"/>
+  <tile id="117" terrain="3,3,1,1"/>
+  <tile id="118" terrain="3,1,1,1"/>
+ </tileset>
+ <layer name="Capa 1" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJztm1tPFEEQhdsbwWQRkRgVNQZF3nBf0T+ib97ehH3Ey793OqHC2fJUV/VM9yyJPJyE3czuzle37qlqzlJKZze6Eeg3aNP3son7y9/755rz97y//93/N+qnVeX1Hwf9dPSp0W9tWoz116AdpS31+mKCjXr5NOK3EqtmrBH7LLNRa5sgs/abxbM9gu8Q/n496E1QR8QmPZkt3Sfv3R30tKB7xnedDHo06N2l8O99+DvrLbFHbXzruPb8bPlX8z4b9KKgJ8QO2Y6ng54rTq09Yp9sm+UIX0/xMXJ7vC8LdtCxcEI4dSyweKjh1+wWnxfTHndE2gbCzxhL8RDlr/F7jY+1HqvXrwrXLtJVfiG/JR0LUf4Iu+R8lLvEFdUi/et/ZBQf63jYh2sj/OeK9TDZPm8R29HYWIDdI/5HHQx6P+hDA99rdqtutRbzv/Y1i4eDS+78uc9B33t7lAcj/FdSxIbIj2ugFfeaPetHkD/q+9Y5bunWoIdpfR2y9gES6xLvkjPZ998L7NZ6J5+XmIj43lPUVpn7NrBrnQIrMrNrW/i+Fb/HK7K4rfWIKfv9i+P7TfIjM+NlbJnpa4EV5XH34o+uC4vg7yJjZvo2gbXEr+2tXws/8k2pfZl/m/yW1B9ci7waNkVzxD9bEyP+j+ZwT37xR5Q/GhMl/jm4RTmfWE2J+H/MHlA+I/z6+bJnrHsxUOphtN7zM/8z9pVz7zUzAutaLwd6rP2M39urWEzRGRG7NttX54B+9mP83j5f54auCy35p/rfi4Ge/kdbj+FvIe/5V/hbPutM8X9p5jCm1898j89Brdc+xp9r70Xg/sVXbB5wFPwOi38r8TXA4p/SA7HWf4wBVvvPL9mPE+/719og0vtplf8YHxF+y1cnab3vswevxQbe96zSuu+tdd/qc3qx7sWG8FszTst/+X7l+V/3QSQelqkul3TO99rzROIf7cDuH9dqHQc6D6K9D+2D3uwlfvSBZQOsAdb8a+nws7wvxXtNrYv0QHGusZPW6znObxkD1gA9C8OZn8VvsSN3j76m2BD7msKOvpT43QrwWyrx65rXK94tG2LsIzvm8TLgf5zxyudx5hflZ72dHsK+rsQ7W8eRn9UAWQOw/mMeSP+/xI81z1vfrXxm/rVsKDGP3Na8FvlZDMgawGYBwl7qI4j/a3s7yHJnpM8Zt5W/pRooNpA6gGu/10Ox4j9a93L+7qb1nr0lqXOMXeevnlnK2lCKY4mBvXQ1662deew6/ow8u6P0fkKzszVLz+0i8ysdA17eM375HfGnZQdrXlGamZZy3ZpT4+cjvUDcD3t5r/nZvVtxHZ3R1HCzWS3OciJ9UD0PiXxGx3/kjI91LXsO19yS3+x8Fta5uXq/0Z6352urnrMzOGPr/GomG0TPoeJ+3dq7WLLOJslvl+pWj7Pwkjs1sWDltlXT2ft4dsPzP/L3+l8IKx90Hzy6f2ExYcWJ8GPus5jv/b8QkViQdZb5tSbnGf+YvuUcdQHrfuQMriV9XknsJWeVpW85xzl+Jow5XFPRFtuODabEBJ7ZjvSu5owHbQs8fxSNB7RN6fye5MR1yQdmC4wJdhYLVZMv+AznrQeWetRJXY9LtVLvI7R9rJ4Fvp7KH1knW9gpuo/E54ySPXIeyPOA1ftr5f9W+wmrVkb30NoeNedWp6iF/6280LLswp4/5b1NnIPpJcsuJbVm/wtcFfC8
+  </data>
+ </layer>
+ <layer name="Capa 2" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt2zkSgCAQBEBjzX2m/w8NDL2wCl1ku2OCATkKhGGAvSU6wI3W8wG8YYoOEGyODgBQ2RgdoIC1J8Yf+gbnfD8A2FgTgSM19plP/hGVlC3JVGtOy37Gmb3+ANAL+z3oh/EMAHm4A9SWr99CtFZ/ALjizWAZ7QQ5rPIlBAQ=
+  </data>
+ </layer>
+</map>
