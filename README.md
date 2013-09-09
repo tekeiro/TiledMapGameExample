@@ -18,6 +18,18 @@ On this example, I want to reach a serie of task what let me improve my videogam
 + Creation of a game screen: On this screen will show tiled maps and also will allow control a animated character 
 that will move around map with tactile controls
 
+###Documentation for Commits###
+The format for the commits will follow the following pattern:
+[<label>] commit short summary
+Description of the commit
+
+The labels for the commits are:
++ **doc**: For changes in documentation or information
++ **release**: For downloadable versions to create the project
++ **res**:  To changes in resource files graphics, sound, etc ...
++ **code**: To source code modifications. You must write a subtag to describe 
+the part of the code that is being modified.
+
 ###Used technologies###
 + **LibGDX**: http://libgdx.badlogicgames.com/
 + **MTX**: http://moribitotechx.blogspot.com.es/
