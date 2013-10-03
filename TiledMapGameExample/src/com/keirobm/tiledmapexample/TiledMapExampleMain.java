@@ -1,5 +1,6 @@
 package com.keirobm.tiledmapexample;
 
+
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL10;
@@ -9,58 +10,99 @@ import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.moribitotech.mtx.android.IAndroidObject;
+import com.moribitotech.mtx.game.AbstractGame;
+import com.moribitotech.mtx.managers.SettingsManager;
+import com.moribitotech.mtx.settings.AppSettings;
+import com.moribitotech.mtx.settings.MtxLogger;
 
-public class TiledMapExampleMain implements ApplicationListener {
-	private OrthographicCamera camera;
-	private SpriteBatch batch;
-	private Texture texture;
-	private Sprite sprite;
+public class TiledMapExampleMain extends AbstractGame {
 	
+	//--------------  CONSTANTS ----------------------
+	/**
+	 * World Target Constants
+	 */
+	public static final int WORLD_TARGET_WIDTH = 960;
+	public static final int WORLD_TARGET_HEIGHT = 540;
+	
+	/**
+	 * Desktop Dimensions
+	 */
+	public static final int DESKTOP_WIDTH = 800;
+	public static final int DESKTOP_HEIGHT = 600;
+	
+	/**
+	 * String Constants
+	 */
+	public static final String TITLE = "Tiled Map Game Example";
+	//------------------------------------------------
+	
+	/**
+	 * Constructor for Main Class
+	 * @param androidObject
+	 */
+	public TiledMapExampleMain(IAndroidObject androidObject){
+		setAndroidObject(androidObject);
+	}
+	
+	/**
+	 * Will be called on creation process
+	 */
 	@Override
-	public void create() {		
-		float w = Gdx.graphics.getWidth();
-		float h = Gdx.graphics.getHeight();
+	public void create() {
+		super.create();
+		//Nothing to do here
+	}
+	
+	/**
+	 * Set up application general settings
+	 */
+	@Override
+	public void setUpAppSettings() {
+		/**
+		 * Set up application settings class using DIPActive and
+		 * based on screen resolution of device
+		 */
+		AppSettings.setUp(Gdx.graphics.getWidth(),    // Screen width
+						  Gdx.graphics.getHeight(),   // Screen height
+						  Gdx.graphics.getWidth(),	  // World width resolution
+						  Gdx.graphics.getHeight(),   // World height resolution
+						  WORLD_TARGET_WIDTH,		  // World target width
+						  WORLD_TARGET_HEIGHT		  // World target height
+						  );
+	   
 		
-		camera = new OrthographicCamera(1, h/w);
-		batch = new SpriteBatch();
+		/**
+		 * Set logs true for development
+		 */
+		//TODO Set MTX Logs false when release
+		MtxLogger.setLogs(true);
 		
-		texture = new Texture(Gdx.files.internal("data/libgdx.png"));
-		texture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 		
-		TextureRegion region = new TextureRegion(texture, 0, 0, 512, 275);
-		
-		sprite = new Sprite(region);
-		sprite.setSize(0.9f, 0.9f * sprite.getHeight() / sprite.getWidth());
-		sprite.setOrigin(sprite.getWidth()/2, sprite.getHeight()/2);
-		sprite.setPosition(-sprite.getWidth()/2, -sprite.getHeight()/2);
+		/**
+		 * Do things for first launch
+		 */
+		if (!SettingsManager.isFirstLaunchDone()) {
+			//TODO Puts first launch actions to do
+		}		
 	}
-
+	
+	
+	/**
+	 * Load all assets or resources for application
+	 */
 	@Override
-	public void dispose() {
-		batch.dispose();
-		texture.dispose();
+	public void setUpAssets() {
+		// TODO Load Assets
 	}
-
+	
+	
+	/**
+	 * Go to Loading Screen
+	 */
 	@Override
-	public void render() {		
-		Gdx.gl.glClearColor(1, 1, 1, 1);
-		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
-		
-		batch.setProjectionMatrix(camera.combined);
-		batch.begin();
-		sprite.draw(batch);
-		batch.end();
+	public void setUpLoadingScreen() {
+		// TODO Go to Loading Screen: setScreen(new LoadingScreen (.....))
 	}
-
-	@Override
-	public void resize(int width, int height) {
-	}
-
-	@Override
-	public void pause() {
-	}
-
-	@Override
-	public void resume() {
-	}
+	
 }
