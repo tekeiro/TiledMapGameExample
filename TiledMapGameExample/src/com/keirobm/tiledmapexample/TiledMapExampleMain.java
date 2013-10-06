@@ -10,6 +10,8 @@ import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.keirobm.tiledmapexample.assets.Assets;
+import com.keirobm.tiledmapexample.screens.LoadingScreen;
 import com.moribitotech.mtx.android.IAndroidObject;
 import com.moribitotech.mtx.game.AbstractGame;
 import com.moribitotech.mtx.managers.SettingsManager;
@@ -93,7 +95,10 @@ public class TiledMapExampleMain extends AbstractGame {
 	 */
 	@Override
 	public void setUpAssets() {
-		// TODO Load Assets
+		
+		Assets assets = new Assets();
+		assets.loadAll();
+		setAssets(assets);
 	}
 	
 	
@@ -103,6 +108,7 @@ public class TiledMapExampleMain extends AbstractGame {
 	@Override
 	public void setUpLoadingScreen() {
 		// TODO Go to Loading Screen: setScreen(new LoadingScreen (.....))
+		setScreen(new LoadingScreen(this, TITLE));
 	}
 	
 }
