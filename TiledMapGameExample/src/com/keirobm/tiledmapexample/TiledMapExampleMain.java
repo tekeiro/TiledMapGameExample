@@ -34,12 +34,6 @@ public class TiledMapExampleMain extends AbstractGame {
 	public static final int DESKTOP_HEIGHT = 600;
 	
 	/**
-	 * String Constants
-	 */
-	public static final String TITLE = "Tiled Map Game Example";
-	//------------------------------------------------
-	
-	/**
 	 * Constructor for Main Class
 	 * @param androidObject
 	 */
@@ -107,8 +101,7 @@ public class TiledMapExampleMain extends AbstractGame {
 	 */
 	@Override
 	public void setUpLoadingScreen() {
-		// TODO Go to Loading Screen: setScreen(new LoadingScreen (.....))
-		setScreen(new LoadingScreen(this, TITLE));
+		setScreen(new LoadingScreen(this, Assets.TITLE));
 	}
 	
 }

@@ -2,6 +2,7 @@ package com.keirobm.tiledmapexample;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.keirobm.tiledmapexample.assets.Assets;
 
 public class Main {
 	public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class Main {
 		 * Set Lwjgl Configuration for this app
 		 */
 		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
-		cfg.title = TiledMapExampleMain.TITLE;
+		cfg.title = Assets.TITLE;
 		cfg.useGL20 = false;
 		cfg.width = TiledMapExampleMain.DESKTOP_WIDTH;
 		cfg.height = TiledMapExampleMain.DESKTOP_HEIGHT;

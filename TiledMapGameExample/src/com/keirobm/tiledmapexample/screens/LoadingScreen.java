@@ -3,6 +3,7 @@ package com.keirobm.tiledmapexample.screens;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -95,7 +96,22 @@ public class LoadingScreen extends AbstractScreenLoading {
 		
 		if (getGame().getAssets().getAssetManager().update()) {
 			if(getSecondsTime() > getLoadingTime() && !isNextScreenSet) {
-				//TODO Transition to Main Menu Screen
+				
+				//Main menu screen
+				MainMenuScreen mmScreen = new MainMenuScreen(getGame(), Assets.TITLE);
+				
+				//Fade out Main Menu Screen to make it invisible
+				//Later, we will go to fade in
+				mmScreen.getStage().addAction(Actions.fadeOut(0f));
+				
+				//Setup transition animations
+				//Current screen: Fade Out
+				//Next screen: Fade In
+				Action actionCurrent = Actions.fadeOut(1f);
+				Action actionNext = Actions.fadeIn(0.5f);
+				
+				//Transition between screens
+				getGame().setScreenWithTransition(this, actionCurrent, mmScreen, actionNext, true);
 				
 				/**
 				 * Next screen set
