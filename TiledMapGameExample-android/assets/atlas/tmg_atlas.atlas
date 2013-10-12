@@ -1,0 +1,131 @@
+
+tmg_atlas.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+logo
+  rotate: false
+  xy: 1, 1
+  size: 120, 116
+  orig: 120, 116
+  offset: 0, 0
+  index: -1
+hierba
+  rotate: false
+  xy: 123, 2
+  size: 100, 115
+  orig: 100, 115
+  offset: 0, 0
+  index: -1
+btExit
+  rotate: false
+  xy: 225, 57
+  size: 100, 60
+  orig: 100, 60
+  offset: 0, 0
+  index: -1
+btPlay
+  rotate: false
+  xy: 327, 57
+  size: 100, 60
+  orig: 100, 60
+  offset: 0, 0
+  index: -1
+swype
+  rotate: false
+  xy: 429, 62
+  size: 90, 55
+  orig: 90, 55
+  offset: 0, 0
+  index: -1
+down
+  rotate: false
+  xy: 225, 12
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 1
+down
+  rotate: false
+  xy: 521, 74
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 2
+down
+  rotate: false
+  xy: 259, 12
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 3
+left
+  rotate: false
+  xy: 555, 74
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 1
+left
+  rotate: false
+  xy: 293, 12
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 2
+left
+  rotate: false
+  xy: 589, 74
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 3
+right
+  rotate: false
+  xy: 327, 12
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 1
+right
+  rotate: false
+  xy: 623, 74
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 2
+right
+  rotate: false
+  xy: 361, 12
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 3
+up
+  rotate: false
+  xy: 657, 74
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 1
+up
+  rotate: false
+  xy: 395, 12
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 2
+up
+  rotate: false
+  xy: 429, 17
+  size: 32, 43
+  orig: 32, 43
+  offset: 0, 0
+  index: 3
+gota
+  rotate: false
+  xy: 691, 89
+  size: 20, 28
+  orig: 20, 28
+  offset: 0, 0
+  index: -1
